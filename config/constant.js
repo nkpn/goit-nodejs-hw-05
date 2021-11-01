@@ -22,8 +22,15 @@ const HttpCode = {
   INTERNAL_SERVER_ERROR: 500,
 };
 
+const Limit = {
+  JSON: 10000,
+  WINDOW_MS: 15 * 60 * 1000,
+  MAX_LIMITER: 3,
+};
+
 module.exports = {
   ValidInfoContact,
   Gender,
   HttpCode,
+  Limit,
 };
